@@ -31,7 +31,7 @@
                                                 <td>{{$pengusul->nama_lengkap}}</td>
                                                 <td>{{$pengusul->jenis_kelamin}}</td>
                                                 <td>{{$pengusul->email}}</td>
-                                                <td>{{$pengusul->role}}</td>
+                                                <td>{{$pengusul->user_role}}</td>
                                                 <td><a href="/pengusul/{{$pengusul->id}}/profile" class="btn btn-warning btn-sm">Detail</a></td>
                                             </tr>
                                             @endforeach
@@ -64,8 +64,8 @@
                         <div class="form-group{{$errors->has('jenis_kelamin') ? ' has-error' : ''}}">
                             <select class="form-select" name="jenis_kelamin" aria-label="Default select example">
                                 <option selected>Jenis Kelamin</option>
-                                <option value="L"{{(old('jenis_kelamin') == 'L') ? ' selected' : ''}}>Laki-Laki</option>
-                                <option value="P"{{(old('jenis_kelamin') == 'p') ? ' selected' : ''}}>Perempuan</option>
+                                <option value="Laki-Laki"{{(old('jenis_kelamin') == 'Laki-laki') ? ' selected' : ''}}>Laki-Laki</option>
+                                <option value="Perempuan"{{(old('jenis_kelamin') == 'Perempuan') ? ' selected' : ''}}>Perempuan</option>
                             </select>
                             @if($errors->has('jenis_kelamin'))
                                 <span class="help-block">{{$errors->first('jenis_kelamin')}}</span>

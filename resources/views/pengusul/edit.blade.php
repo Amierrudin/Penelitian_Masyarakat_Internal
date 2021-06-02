@@ -20,8 +20,8 @@
                                     <div class="form-group">
                                         <select class="form-control" name="jenis_kelamin" id="exampleFormControlSelect1">
                                             <option selected>Jenis Kelamin</option>
-                                            <option value="L" @if($pengusul->jenis_kelamin == 'L') selected @endif>Laki-Laki</option>
-                                            <option value="P" @if($pengusul->jenis_kelamin == 'P') selected @endif>Perempuan</option>
+                                            <option value="Laki-Laki" @if($pengusul->jenis_kelamin == 'Laki-Laki') selected @endif>Laki-Laki</option>
+                                            <option value="Perempuan" @if($pengusul->jenis_kelamin == 'Perempuan') selected @endif>Perempuan</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
